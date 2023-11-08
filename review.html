@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="review.css" />
+  </head>
+  <body>
+      <section id="product-reviews" style="text-align: center;">
+    <h2>Product Reviews</h2>
+    <div id="reviews-container"></div>
+    <form id="review-form">
+        <label for="product-select">Product:</label>
+        <select id="product-select" required>
+            <option value="">Select a product</option>
+            <option value="Oppo">Oppo</option>
+            <option value="Samsung">Samsung</option>
+            <option value="iPhone">iPhone</option>
+            <option value="iPhone">Tecno</option>
+
+           
+        </select>
+        <label for="name-input">Name:</label>
+        <input type="text" id="name-input" required>
+        <label for="rating-input">Rating:</label>
+        <select id="rating-input" required>
+            <option value="">Select a rating</option>
+            <option value="1">1 star</option>
+            <option value="2">2 stars</option>
+            <option value="3">3 stars</option>
+            <option value="4">4 stars</option>
+            <option value="5">5 stars</option>
+        </select>
+        <label for="review-input">Review:</label>
+        <textarea id="review-input" rows="4" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+<script>
+  const reviewForm = document.getElementById('review-form');
+  const reviewsContainer = document.getElementById('reviews-container');
+
+  reviewForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const nameInput = document.getElementById('name-input');
+      const ratingInput = document.getElementById('rating-input');
+      const reviewInput = document.getElementById('review-input');
+
+      const name = nameInput.value;
+      const rating = ratingInput.value;
+      const review = reviewInput.value;
+
+      const reviewElement = document.createElement('div');
+      reviewElement.innerHTML = `<p><strong>${name}</strong> - ${rating} stars</p><p>${review}</p>`;
+      reviewsContainer.appendChild(reviewElement);
+
+      // Clear form inputs
+      nameInput.value = '';
+      ratingInput.value = '';
+      reviewInput.value = '';
+  });
+</script>
+  </body>
+</html>

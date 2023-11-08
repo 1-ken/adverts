@@ -1,0 +1,142 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Apply a background color to the body */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  /* Header styles */
+  .header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Navigation bar styles */
+  .navbar {
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-item {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  
+  .nav-item a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .nav-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-item.active a {
+    font-weight: bold;
+  }
+  
+  /* Content container styles */
+  .content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .content-title {
+    font-size: 24px;
+  }
+  
+  .content-subtitle {
+    font-size: 16px;
+  }
+  
+  /* Section styles */
+  .section {
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .section-title {
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .section-description {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Product section styles */
+  .product-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .product {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+    max-width: 200px;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+  
+  .product-image {
+    max-width: 200px;
+    max-height: 200px;
+  }
+  
+  .product-title {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .product-description {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  /* Footer styles */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer-title {
+    font-size: 20px;
+  }
+  
+  .footer-description {
+    font-size: 16px;
+  }
+  
+  .footer-contact-info {
+    font-size: 16px;
+  }
+  
+  .footer-copyright {
+    font-size: 14px;
+  }
+  
